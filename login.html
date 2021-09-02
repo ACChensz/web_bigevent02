@@ -24,7 +24,7 @@
         <!-- 表单 -->
         <!-- 登录表单 -->
         <div class="login-box">
-            <form class="layui-form" action="">
+            <form class="layui-form" id="form_login">
                 <!-- 用户名 -->
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-username"></i>
@@ -58,7 +58,7 @@
                 <!-- 密码 -->
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-password"></i>
-                    <input type="password" name="password" required lay-verify="required|pwd|repwd" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                    <input type="password" name="password" required lay-verify="required|pwd" placeholder="请输入密码" autocomplete="off" class="layui-input">
                 </div>
                 <!-- 确认密码 -->
                 <div class="layui-form-item">
@@ -71,7 +71,7 @@
                 </div>
                 <!-- 去注册 -->
                 <div class="layui-form-item">
-                    <a href="javascript:;" class="link-login links">去登录</a>
+                    <a href="javascript:;" class="link-login links" id="link_login">去登录</a>
                 </div>
             </form>
         </div>
@@ -81,7 +81,11 @@
     <script src="assets/lib/layui/layui.all.js"></script>
     <!-- 导入jQuery.js -->
     <script src="assets/lib/jquery.js"></script>
+    <!-- 导入baseAPI.js -->
+    <script src="assets/js/baseAPI.js"></script>
+    <!-- 导入login.js -->
     <script src="assets/js/login.js"></script>
+
 </body>
 
 </html>
